@@ -1,10 +1,11 @@
-import random
+import secrets
+
 VACCINES = ["Moderna", "Pfizer", "Sputnik v", "Covaxin", "AstraZeneca", "CoronaVac"]
 
-random.shuffle(VACCINES)
+secrets.SystemRandom().shuffle(VACCINES)
 print(VACCINES)
 
-LUCKY = random.choice(VACCINES)
+LUCKY = secrets.SystemRandom().choice(VACCINES)
 print(LUCKY)
 
 for vac in VACCINES:
