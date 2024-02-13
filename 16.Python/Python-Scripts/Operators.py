@@ -101,8 +101,8 @@ print(ans)
 a = 12
 b = 15
 
-result = a is b
+result = a == b
 print(result)
 
-result = a is not b
+result = a != b
 print(result)
